@@ -2,6 +2,10 @@
 
 # Looped Builder - Dark Mode Implementation
 # Usage: ./run.sh [max_iterations]
+#
+# IMPORTANT: Run this script directly in your terminal, not through Claude Code.
+# Each iteration calls Claude and can take several minutes. The full run may take
+# a long time, which will exceed Claude Code's execution timeout.
 
 set -e
 

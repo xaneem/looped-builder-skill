@@ -212,6 +212,8 @@ Created in `[directory]/`:
 
 ---
 
+**Important:** Run this script directly in your terminal, not through Claude Code. The script runs multiple iterations that can take a long time to complete, which will exceed Claude Code's execution timeout.
+
 To execute:
 ```bash
 cd [directory]
