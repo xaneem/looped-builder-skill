@@ -1,0 +1,72 @@
+# {{FEATURE_NAME}} - Implementation Prompt
+
+You are implementing {{FEATURE_DESCRIPTION}}. Read the spec and implementation plan, then execute the next step.
+
+## Step 1: Check Progress
+
+Read `{{FEATURE_PATH}}/implementation_plan.md` and find the **first unchecked item** (marked with `- [ ]`).
+
+If all items are complete, respond with:
+```
+<promise>COMPLETE</promise>
+```
+
+Otherwise, note the step description and continue.
+
+## Step 2: Implement the Step
+
+Based on the step found, implement ONLY that specific step.
+
+### Important Guidelines
+
+1. **Exploration steps**: Document findings (file paths, line numbers, patterns) directly in the plan under the step.
+2. **Implementation steps**: Write clean, working code that follows existing patterns in the codebase.
+3. **Testing steps**: Run the specified commands and document results.
+
+### Reading Files
+- Always read files before modifying them
+- When exploring, note exact line numbers for future reference
+- Follow existing code patterns and styles
+
+### Writing Code
+- Match the style of surrounding code
+- No placeholder code - write real, working implementations
+- Keep changes minimal and focused on the step
+
+## Step 3: Update Progress
+
+After completing the step, edit `{{FEATURE_PATH}}/implementation_plan.md`:
+
+1. Change the completed item from `- [ ]` to `- [x]`
+2. Add findings or implementation notes under the step (indented under **Findings:** or **Implementation:**)
+3. If you discovered the plan needs adjustment, add new steps as bullet points
+
+## Step 4: Report
+
+Output a summary in this format:
+
+```
+## Step Completed: {brief step description}
+
+**What was done:**
+- [Brief description of actions taken]
+
+**Files modified:**
+- [List of files that were changed]
+
+**Next step:**
+- {description of the next unchecked step, or "None - implementation complete"}
+```
+
+---
+
+## Rules
+
+1. **One step per run** - Complete exactly ONE checkbox item, then stop
+2. **Read before writing** - Always read a file before modifying it
+3. **Follow existing patterns** - Match the code style of surrounding code
+4. **Mark completion** - Always update the checkbox when done
+5. **No placeholders** - Write real, working code
+6. **Document findings** - Exploration steps should capture useful info for later steps
+7. **Stay focused** - Don't modify files outside the current step's scope
+8. **Preserve functionality** - Don't break existing features

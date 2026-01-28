@@ -1,0 +1,8 @@
+{
+  "name": "looped-builder",
+  "version": "1.0.0",
+  "description": "Scaffold large implementation tasks for iterative execution with Claude in a bash loop",
+  "author": {
+    "name": "xaneem"
+  }
+}

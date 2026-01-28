@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "looped-builder",
+  "description": "Local marketplace for looped-builder skill",
+  "owner": {
+    "name": "xaneem"
+  },
+  "plugins": [
+    {
+      "name": "looped-builder",
+      "version": "1.0.0",
+      "description": "Scaffold large implementation tasks for iterative execution with Claude in a bash loop",
+      "author": {
+        "name": "xaneem"
+      },
+      "source": "./",
+      "category": "development"
+    }
+  ]
+}
